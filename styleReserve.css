@@ -1,0 +1,45 @@
+.title {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  font-style: normal;
+  color: transparent;
+  background: linear-gradient(135deg, #c648cf, #8e48cf, #9430ca);
+  background-size: 500px 100%;
+  background-clip: text;
+}
+
+.body {
+    background-color: #f4f8fb;
+    font-family: "Special Gothic Expanded One", sans-serif;
+}
+
+.form-container {
+    color: #2f0535;
+    background: rgb(222, 157, 231);
+    border-radius: 1rem;
+    padding: 40px;
+    box-shadow: 0 8px 20px rgba(151, 147, 147, 0.1);
+    margin-top: 50px;
+}
+
+.form-label {
+    color: #2f0535;
+}
+
+.btn-primary {
+    background-color: #2a9be7;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 25px;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.footer{
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CAR RENTAL SYSTEM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+<!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+
+<!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!--style.css-->
+    <link rel="stylesheet" href="myprofile.css" />
+
+  </head>
+  <body>
+
+    <!--header-->
+    <div class="container my-4">
+        <div class="title">CAR RENTAL SYSTEM</div>
+    </div>
+
+    <!--navigation-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container">
+
+    <!--logo as dropdown-->
+    <div class="dropdown">
+        <a href="" class="d-flex align-items-center text white text-decoration-none dropdown-toggle" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="logo.jpg" alt="logo" width="40" height="40" class="rounded-circle me-2">
+        </a>
+        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="profileDropdown">
+            <li><a class="dropdown-item" href="myprofile.html">My Profile</a></li>
+        </ul>
+    </div>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pricing.html">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="reservation.html">Reservation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+      </ul>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="darkModeToggle" />
+        <label class="form-check-label" for="darkModeToggle" id="themeLabel">Dark Mode</label>
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <!--content-->
+    <div class="container py-5">
+        <div class="profile-card text-center">
+            <img src="fatin.jpg" alt="fatin" class="profile-img mb-3">
+
+            <!--personal info-->
+            <h3 class="mb-0">Fatin Nur Aisyah Binti Mohd Faizal</h3>
+            <p class="text-muted">Student of Bachelor of Information Management System</p>
+            <div class="d-flex justify-content-center">
+                <table class="table w-75 mt-4 text-center table-bordered align-middle">
+                    <tbody>
+                        <tr class="table-light">
+                            <th><i class="fas fa-id-card"></i> Student ID</th> 
+                            <td>2023873666</td>
+                        </tr>
+                        <tr class="table-primary">
+                            <th><i class="fas fa-users"></i> Group</th>
+                            <td>CDIM2624ST1</td>
+                        </tr>
+                        <tr class="table-light">
+                            <th><i class="fas fa-book"></i> Subject</th>
+                            <td>IMS566 Advanced Web Design & Content Management</td>
+                        </tr>
+                        <tr class="table-primary">
+                            <th><i class="fas fa-phone"></i> Phone</th>
+                            <td>+6012-7614059</td>
+                        </tr>
+                        <tr class="table-light">
+                            <th><i class="fas fa-envelope"></i> Email</th>
+                            <td>2023873666@student.uitm.edu.my</td>
+                        </tr>
+                        <tr class="table-primary">
+                            <th><i class="fas fa-map-market-alt"></i> Address</th>
+                            <td>Ipoh, Perak</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <!--footer-->
+    <footer class="footer mt-auto  bg-body-tertiary">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>2025 Car Rental System. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!--bootstrap cdn js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    <!--darkmode-->
+    <script>
+        function setTheme(theme){
+            document.documentElement.setAttribute("data-bs-theme", theme);
+            localStorage.setItem("theme", theme);
+            document.getElementById("themeLabel").innerText = theme === "dark" ? "Dark Mode On" : "Dark Mode Off";
+        }
+
+        document
+        .getElementById("darkModeToggle")
+        .addEventListener("change", function (event) {
+            if (event.target.checked) {
+                setTheme("dark");
+            } else {
+                setTheme("");
+            }
+        });
+
+        window.onload = function() {
+            let savedTheme = localStorage.getItem("theme");
+            if(savedTheme) {
+                setTheme(savedTheme);
+                if(savedTheme === "dark") {
+                    document.getElementById("darkModeToggle").checked = true;
+                }
+            }
+        }
+    </script>
+  </body>
+</html>
